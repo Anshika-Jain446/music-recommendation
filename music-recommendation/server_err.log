@@ -1,0 +1,34 @@
+[nltk_data] Downloading package stopwords to C:\Users\Anand
+[nltk_data]     Jain\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+[nltk_data] Downloading package punkt to C:\Users\Anand
+[nltk_data]     Jain\AppData\Roaming\nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package wordnet to C:\Users\Anand
+[nltk_data]     Jain\AppData\Roaming\nltk_data...
+[nltk_data]   Package wordnet is already up-to-date!
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with stat
+[nltk_data] Downloading package stopwords to C:\Users\Anand
+[nltk_data]     Jain\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+[nltk_data] Downloading package punkt to C:\Users\Anand
+[nltk_data]     Jain\AppData\Roaming\nltk_data...
+[nltk_data]   Package punkt is already up-to-date!
+[nltk_data] Downloading package wordnet to C:\Users\Anand
+[nltk_data]     Jain\AppData\Roaming\nltk_data...
+[nltk_data]   Package wordnet is already up-to-date!
+ * Debugger is active!
+ * Debugger PIN: 156-154-245
+127.0.0.1 - - [10/Jan/2026 22:02:59] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [10/Jan/2026 22:03:00] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [10/Jan/2026 22:03:00] "GET /static/js/script.js HTTP/1.1" 304 -
+127.0.0.1 - - [10/Jan/2026 22:04:35] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [10/Jan/2026 22:04:36] "GET /static/css/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [10/Jan/2026 22:04:36] "GET /static/js/script.js HTTP/1.1" 304 -
+127.0.0.1 - - [10/Jan/2026 22:06:28] "POST /detect_emotion HTTP/1.1" 200 -
+C:\Users\Anand Jain\music recommender flux\music-recommendation\.venv\Lib\site-packages\keras\src\export\tf2onnx_lib.py:8: FutureWarning: In the future `np.object` will be defined as the corresponding NumPy scalar.
+  if not hasattr(np, "object"):
+127.0.0.1 - - [10/Jan/2026 22:07:29] "POST /detect_emotion HTTP/1.1" 400 -

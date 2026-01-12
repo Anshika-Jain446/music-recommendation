@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Recognition Playlist Maker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+    
+    <div class="container">
+        <header class="header">
+            <i class="fas fa-music header-icon"></i>
+            <h1>AI-Based Emotion Recognition Playlist Maker</h1>
+            <p class="subtitle">Discover music that matches your mood</p>
+        </header>
+
+        <div class="input-section">
+            <div class="webcam-section card">
+                <div class="card-header">
+                    <i class="fas fa-camera"></i>
+                    <h2>Facial Emotion Detection</h2>
+                </div>
+                <div class="video-container">
+                    <video id="video" autoplay></video>
+                    <canvas id="canvas" style="display: none;"></canvas>
+                </div>
+                <button id="capture-btn" class="btn btn-primary">
+                    <i class="fas fa-face-smile"></i>
+                    Capture Emotion
+                </button>
+            </div>
+
+            <div class="text-section card">
+                <div class="card-header">
+                    <i class="fas fa-keyboard"></i>
+                    <h2>Text Emotion Detection</h2>
+                </div>
+                <textarea id="text-input" placeholder="How are you feeling today? Tell us about your mood..."></textarea>
+                <div class="text-actions">
+                    <button id="analyze-text-btn" class="btn btn-secondary">
+                        <i class="fas fa-brain"></i>
+                        Analyze Text
+                    </button>
+                    <button id="analyze-both-btn" class="btn btn-primary">
+                        <i class="fas fa-circle-nodes"></i>
+                        Analyze Both
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="result-section" id="result-section">
+            <div class="card">
+                <div class="card-header">
+                    <i class="fas fa-heart-pulse"></i>
+                    <h2>Your Mood & Playlists</h2>
+                </div>
+                <div id="emotion-display" class="emotion-display"></div>
+                <div id="playlists" class="playlists-grid"></div>
+            </div>
+        </div>
+
+        <div id="loading" class="loading-overlay">
+            <div class="spinner"></div>
+            <p>Analyzing your emotion...</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Made with <i class="fas fa-heart"></i> using AI & Spotify API</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
