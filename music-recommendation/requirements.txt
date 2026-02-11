@@ -1,4 +1,5 @@
 Flask==2.3.3
+gunicorn==21.2.0
 text2emotion==0.0.5
 spotipy==2.23.0
 opencv-python==4.8.0.76
@@ -7,3 +8,4 @@ deepface==0.0.79
 tf-keras==2.15.0
 numpy<2.0.0
 emoji<2.0.0
+
